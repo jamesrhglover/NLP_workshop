@@ -7,6 +7,8 @@ library(broom)
 
 # Example 6
 
+# word embeddings - way to represnt words numerically
+
 # Load the star_wars_scripts.rds dataset
 df <- readRDS("data/star_wars_scripts.rds")
 

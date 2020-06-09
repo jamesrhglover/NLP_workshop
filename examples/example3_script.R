@@ -26,3 +26,14 @@ tidy_script_lemma <- tidy_script %>%
   mutate(word = lemmatize_strings(word)) %>%
   count(word, sort = TRUE)
 
+# removed power as a key word
+# depends on the data to see what happens
+
+# Stemming and Lemmatization both generate the root form of the inflected words. The difference is that stem might not be an actual word whereas, lemma is an actual language word. Stemming follows an algorithm with steps to perform on the words which makes it faster.
+
+
+# Stemming and Lemmatization are Text Normalization techniques in the field of Natural Language Processing 
+# that are used to prepare text, words, and documents for further processing. 
+# Stemming and Lemmatization have been studied, and algorithms have been developed in Computer Science 
+# since the 1960's. 
+# 

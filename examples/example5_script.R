@@ -23,3 +23,9 @@ tf_idf_script <- df %>%
   top_n(10) %>% 
   arrange(movie, desc(tf_idf))
 
+# Kenobi is the most forceful word, not mentioned much in the other films
+
+# term frequency - How common the word is and how common it is across all of the documents
+# how many of the words from document one are also in document two
+# Also looks at the inverse, how often the word is contained in each document
+# A rare word will overweight

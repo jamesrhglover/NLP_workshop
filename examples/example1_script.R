@@ -1,5 +1,6 @@
 library(dplyr)
 library(magrittr)
+library(tidyverse)
 
 # Example 1
 
@@ -11,7 +12,7 @@ df %>%
   group_by(movie) %>% 
   summarise(line_count = n())
 
-# Which movie has the most characters?
+# Which movie has the most characters? # speaking
 df %>% 
   group_by(movie) %>% 
   summarise(character_count = n_distinct(character))
