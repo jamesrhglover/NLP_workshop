@@ -92,10 +92,18 @@ search_synonyms <- function(word_vectors, selected_vector) {
 }
 
 jedi <- search_synonyms(word_vectors, word_vectors["jedi",])
+rm(jedi)
 jedi
+
+
 
 chewie <- search_synonyms(word_vectors, word_vectors["luke",])
 chewie
+
+
+
+library(ggplot2)
+
 
 jedi %>%
   mutate(selected = "jedi") %>%
@@ -135,3 +143,5 @@ ggplot(forplot, aes(x=V1, y=V2, label=word)) +
   theme_minimal() +
   xlab("First Dimension Created by SVD") +
   ylab("Second Dimension Created by SVD")
+
+
